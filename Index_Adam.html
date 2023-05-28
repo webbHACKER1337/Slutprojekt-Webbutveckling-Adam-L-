@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style_Adam.css">
+    <script src="Functions_Adam.js"></script>
+    <title>Adams Projekt</title>
+
+</head>
+
+<body>
+
+<br>
+
+<div>
+<!--Det finns en knapp (goodvibes) som kommer att fylla i en rubrik i vad som från början är en tom rubrik-->
+<h1 id= "heading"></h1>
+        
+</div>
+
+<!--Diven är tom men fylls med innerhåll vid klick på knappen time. En lokal digital klocka poopar upp i diven. -->
+<div id="text_clock"></div>
+
+<!-- Bild med bestämmd storlek -->
+<img src="binary-numbers.jpg" height="30%" width="15%" id="image">
+</div>
+
+<!-- Alla knapparna finns i denna diven -->
+<div id="div_buttons">
+
+<!-- alla knappar med klass för styling ska underlättas. När de klickas på tillkallas funktion som ger önskat resultat. -->
+<div>
+    <button class="common_button" onclick="change_backround()">Change Background</button>
+    <button class="common_button" onclick="good_vibes();">Good Vibes</button>
+    <button class="common_button" onclick="show_time();">Time</button>
+</div>
+
+<div>
+    <button class="common_button" onclick="switch_pic();">Change Picture</button>
+    <button class="common_button" onclick="hide_pic();">Hide picture</button>
+    <button class="common_button" onclick="show_pic();">Show picture</button>
+</div>
+
+<div>
+    <button class="common_button" onclick="move_header();">Header</button>
+    <button class="common_button" onclick="headerRemove();">Remove header</button>
+    <button class="common_button" onclick="headerDisplay();">Show header</button>
+</div>
+
+</div>
+
+</body>
+</html>
+ 

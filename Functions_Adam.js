@@ -39,15 +39,15 @@ function show_time(){
 
     /* För att flytta diven med klassen .header  */
 function move_header(){
-    const head = document.getElementById('heading');
+    const head = document.getElementById('header');
     const move_picture = document.getElementById('image');
 
     /* Ser till så att våran head har header klassen */
-    if (head.className == "flexbs"){
+    if (head.className == "flex_t"){
         head.className = head.className + "head_er";
 
         move_picture.style.padding = "5px";
-        move_picture.style.background = "blue";
+        move_picture.style.behind_heading = "gold";
         return
     }
 
@@ -59,7 +59,7 @@ function move_header(){
 }
 
 
-/* För att ta bort Header Diven med simpel display none */
+/* För att ta bort den stora diven med display none */
 function headerRemove(){
     const head = document.getElementById('heading');
     head.style.display = "none";
@@ -69,7 +69,7 @@ function headerRemove(){
 
 
 
-/* För att visa Header diven med display flex och hur den ska va displayad med flex direction column */
+/* För att visa header diven med display flex för att kunna lägga elementen i kolumn. */
 function headerDisplay(){
     const head = document.getElementById('heading');
     head.style.display = "flex";
